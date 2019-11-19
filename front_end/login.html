@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>usuarioLogin</title>
+    <script src="/MDB-Free/js/jquery.min.js"></script>
+    <script src="/MDB-Free/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/MDB-Free/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="card container mt-3">
+            <h1 class="text-center container-fluid bg-dark text-light">Logarr</h1>
+            <form action="/usuLogado" class="form-group card-body text-center" method="POST">
+                <input type="text" id="usuarioLogin" class="mb-3 mt-2 form-control rounded border-bottom" placeholder="Login" required>
+                <input type="text" id="usuarioPassword" class="mb-3 form-control rounded border-bottom" placeholder="Senha" required>
+                <div class="checkbox mb-2">
+                    <label class="mb-0"><input type="checkbox" value="remember-me"/>Remember me</label>
+                </div>
+                <button class="btn row-3 btn-primary rounded-pill btn-lg mt-2" onClick="javascript:logarUsuario()" type="submit" href="/usuLogado">Enviar</button>
+                <p class="mt-2 mb-2 text-muted">&copy; 2017-2019</p>
+            </form>
+        </div>
+        <section class="container rounded p-3 mt-3 text-light text-cer bg-dark">Bem vindo: <br>
+            <div id="usuLogado" class="text-center text-light bg-dark"></div>
+        </section>
+    </header>
+
+    <script src="/MDB-Free/js/popper.min.js "></script>
+    <script src="/MDB-Free/js/mdb.min.js "></script>
+    <script src="/axios/axios.js"></script>
+    <script>
+        function listaUsuarioListener() {
+            console.log('listaUsuarioListener');
+
+            console.log(this.responseText);
+        };
+        //Função para listar os usuarios no console
+        function listarUsuarios() {
+            console.log('listarUsuarios');
+            var req = new XMLHttpRequest();
+            req.onload = listaUsuarioListener;
+            req.open("get", "http://localhost:3001", true);
+            req.send();
+        }
+    </script>
+    <!-- Cadastrar e logar teste -->
+    <script>
+        function cadastrarUsuario() {
+            axios.post(
+                'http://localhost:3001/usuario', {
+                    nome: document.getElementById('inputNome').value,
+                    sobrenome: document.getElementById('inputSobrenome').value,
+                    telefone: document.getElementById('inputTelefone').value,
+                    nascimento: document.getElementById('inputNascimento').value,
+                    email: document.getElementById('inputEmail').value,
+                    login: document.getElementById('inputLogin').value,
+                    senha: document.getElementById('inputPassword').value,
+                },
+            );
+        }
+
+        function logarUsuario() {
+            axios.get(
+                'http://localhost:3001/logar', {
+                    login: document.getElementById('usuarioLogin').value,
+                    senha: document.getElementById('usuarioPassword').value,
+                },
+            );
+        }
+    </script>
+</body>
+
+
+</html>

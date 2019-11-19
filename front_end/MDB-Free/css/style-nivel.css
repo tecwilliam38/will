@@ -1,0 +1,135 @@
+.card-header {
+    color: #fff!important;
+    margin: 0 auto;
+    text-align: center!important;
+    width: 100%!important;
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    border-radius: 12px 12px 0 0!important;
+    text-shadow: #000 1px 3px 9px;
+    box-shadow: inset #555 0 0 15px 3px;
+}
+
+.col-md-4 {
+    padding: 0;
+}
+
+.fas:hover {
+    margin: 0 auto;
+    font-size: 120%;
+    text-shadow: #fff 0 2px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: blue!important;
+}
+
+.d-flex {
+    border-radius: 8px;
+    color: #000!important;
+}
+
+
+/* Style cursor links */
+
+.nivel-cursor {
+    cursor: pointer;
+    font-size: 20px!important;
+    text-shadow: #fff 0 1px 4px;
+}
+
+.nivel-cursor:hover {
+    cursor: pointer;
+    font-size: 20px!important;
+    color: #fff;
+    text-shadow: #000 0 2px 4px;
+}
+
+
+/* links de imagens de fundo */
+
+.bg1 {
+    background-image: url('/img/nivel1/nivel-smartfone.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg1:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg2 {
+    background-image: url('/img/nivel1/nivel-email.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg2:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg3 {
+    background-image: url('/img/nivel1/nivel-pc.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg3:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg4 {
+    background-image: url('/img/nivel1/nivel-smat-tv.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg4:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg5 {
+    background-image: url('/img/nivel1/nivel-facebook.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg5:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg6 {
+    background-image: url('/img/nivel1/nivel-software.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg6:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg7 {
+    background-image: url('/img/nivel1/nivel-instagram.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg7:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}
+
+.bg8 {
+    background-image: url('/img/nivel1/nivel-internet.png');
+    background-size: cover;
+    box-shadow: inset #000 1px 1px 12px 1px;
+}
+
+.bg8:hover {
+    transform: scale(1.05, 1.1);
+    transition: .9s;
+}

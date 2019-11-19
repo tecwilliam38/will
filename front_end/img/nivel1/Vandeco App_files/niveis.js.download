@@ -1,0 +1,57 @@
+$(document).ready(function(){
+    $("#link1").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op1.html"); 
+        });
+    })
+});
+$(document).ready(function(){
+    $("#link2").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op2.html"); 
+        });
+    })
+});
+$(document).ready(function(){
+    $("#link3").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op3.html"); 
+        });
+    })
+});
+$(document).ready(function(){
+    $("#link4").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op4.html"); 
+        });
+    })
+});
+$(document).ready(function(){
+    $("#link5").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op5.html"); 
+        });
+    })
+});
+$(document).ready(function(){
+    $("#link6").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op6.html"); 
+        });
+    })
+});
+$(document).ready(function(){
+    $("#link7").click(function(){
+          
+        $(function(){
+            $("#corpo_nivel1").load("/niveis/nivel1/nivel1_op7.html"); 
+        });
+    })
+});
+

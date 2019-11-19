@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- js -->
+    <script src="MDB-Free_4.8.11/js/jquery-3.4.1.min.js"></script>
+    <script src="MDB-Free_4.8.11/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="MDB-Free_4.8.11/css/bootstrap.min.css">
+    <link rel="stylesheet" href="MDB-Free_4.8.11/css/mdb.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <title>App Melhor idade</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid ">
+            <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="#" class="navbar-brand" data-toggle="collapse" data-target="#navbarNav">Menu</a>
+                <div class="text-light col-xs-10 navbar">Bem vindo
+                    <div id="logado"></div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+        </span></button>
+
+                </div>
+                <h1 class="container text-light col-sm-12 col-xs-12 ">Bem vindos ao App melhor Idade</h1>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white bg-dark active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-white bg-dark" href="#" data-toggle="modal" data-target="#cadastro">Cadastrar <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-white bg-dark" href="#" data-toggle="modal" data-target="#login">Login<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- Card Wider -->
+    <main class="container-fluid busca page">
+        <section class="row">
+            <!-- Card 1 -->
+            <article class="col-md-4 cursor-link" onclick="carregar('nivel1.html')">
+                <div class="card border" onclick="loadPage('nivel1.html')">
+                    <div class="card border card-cascade wider">
+                        <!-- Card image -->
+                        <div class="view view-cascade border  overlay">
+                            <img class="card-img-top border cursor-link" src="img/bloco_1.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h3 class="card-title text-dark text-center"><strong>
+                    <a class="cursor-link" onclick="loadPage('nivel1.html')">Nivel 1</a></strong>
+                            </h3>
+                            <h1 class="card-body text-dark pb-2 cursor-link text-center" onclick="loadPage('nivel1.html')">Iniciante</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Card 2-->
+            <article class="col-md-4 cursor-link" onclick="carregar('nivel2.html')">
+                <div class="card border" onclick="loadPage('nivel2.html')">
+                    <div class="card border card-cascade wider">
+                        <!-- Card image -->
+                        <div class="view view-cascade border  overlay">
+                            <img class="card-img-top border cursor-link" src="img/bloco_2.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h3 class="card-title text-dark text-center"><strong>
+                        <a class="cursor-link" onclick="loadPage('nivel2.html')">Nivel 2</a></strong>
+                            </h3>
+                            <h1 class="card-body text-dark pb-2 cursor-link text-center" onclick="loadPage('nivel2.html')">Intermediário</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="col-md-4 cursor-link" onclick="carregar('nivel3.html')">
+                <div class="card border" onclick="loadPage('nivel3.html')">
+                    <div class="card border card-cascade wider">
+                        <!-- Card image -->
+                        <div class="view view-cascade border  overlay">
+                            <img class="card-img-top border cursor-link" src="img/bloco_3.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body card-body-cascade text-center">
+                            <!-- Title -->
+                            <h3 class="card-title text-dark text-center"><strong>
+                            <a class="cursor-link" onclick="loadPage('nivel3.html')">Nivel 3</a></strong>
+                            </h3>
+                            <h1 class="card-body text-dark pb-2 cursor-link text-center" onclick="loadPage('nivel3.html')">Avançado</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Card Regular -->
+        </section>
+    </main>
+    </div> -->
+    <!-- Modal Cadastrar -->
+    <div class="modal fade" id="cadastro" tabindex="-1" role="dialog">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header  info-color-dark text-light info-color">
+                    <h4 class="modal-title my-0 text-center">Cadastre-se</h4>
+                    <button class="close" data-dismiss="modal" type="button"><span>&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-user fa-4x"></i>
+                    <form class="form-group">
+                        <input type="text" id="inputNome" class="mb-1 mt-2 form-control rounded border-bottom" placeholder="Primeiro Nome" required autofocus>
+                        <input type="text" id="inputSobrenome" class="mb-1 mt-2 form-control rounded border-bottom" placeholder="Sobrenome" required autofocus>
+                        <input type="email" id="inputEmail" class="mb-1 form-control rounded border-bottom" placeholder="Email" required>
+                        <input type="number" id="inputTelefone" placeholder="Telefone" required>
+                        <input type="date" id="inputNascimento" class="mb-1 form-control rounded border-bottom" placeholder="Nascimento" required>
+                        <input type="text" id="inputLogin" placeholder="Login" required>
+                        <input type="password" id="inputPassword" class="mb-3 form-control rounded border-bottom" placeholder="Senha" required>
+                        <div class="checkbox mb-2">
+                            <label class="mb-0"><input type="checkbox" value="remember-me"/>Remember me</label>
+
+                        </div>
+                        <button class="btn btn-primary rounded-pill btn-lg mt-2" onClick="javascript:cadastrarUsuario()" type="submit">Enviar</button>
+                        <p class="mt-2 mb-2 text-muted">&copy; 2017-2019</p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Cadastrar fim -->
+    <!-- Modal login inicio -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header  info-color-dark text-light info-color">
+                    <h4 class="modal-title my-0 text-center">Login</h4>
+                    <button class="close" data-dismiss="modal" type="button"><span>&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-user fa-4x"></i>
+                    <form class="form-group">
+                        <input type="text" id="usuarioLogin" placeholder="Login" required>
+                        <input type="password" id="usuarioPassword" class="mb-3 form-control rounded border-bottom" placeholder="Senha" required>
+                        <div class="checkbox mb-2">
+                            <label class="mb-0"><input type="checkbox" value="remember-me"/>Remember me</label>
+                        </div>
+                        <button class="btn btn-primary rounded-pill btn-lg mt-2" onClick="javascript:logarUsuario()" type="submit">Enviar</button>
+                        <p class="mt-2 mb-2 text-muted">&copy; 2017-2019</p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--   <div class="modal fade" id="login" tabindex="-1" role="dialog">
+        <div class="modal-dialog container" role="document">
+            <div class="modal-content">
+                <div class="modal-header info-color-dark text-light">
+                    <h2 class="modal-title">Login</h2>
+                    <button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-user fa-4x"></i>
+                    <form class="form-signin mt-2" method="POST" action="php/valida_login.php">
+                        <input type="text" name="usuario" id="inputEmail" class="mb-1 form-control rounded-lg border-bottom" placeholder="Login" required>
+                        <input type="password" name="senha" id="inputPassword" class="mb-4 form-control rounded-lg border-bottom" placeholder="Password" required>
+                        <div class="checkbox mb-2">
+                            <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                          </label>
+                        </div>
+                        <button type="button" class="btn btn-primary rounded-pill btn-lg" onClick="javascript:logarUsuario()">Logar</button>
+                        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+    <script>
+        function carregar(page) {
+            $(".page").load(page)
+        }
+
+        function listaUsuarioListener() {
+            console.log('listaUsuarioListener');
+
+            console.log(this.responseText);
+        };
+
+        function listarUsuarios() {
+            console.log('listarUsuarios');
+            var req = new XMLHttpRequest();
+            req.onload = listaUsuarioListener;
+            req.open("get", "http://localhost:3001", true);
+            req.send();
+        }
+    </script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="MDB-Free_4.8.11/js/bootstrap.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="MDB-Free_4.8.11/js/popper.min.js "></script>
+    <script src="MDB-Free_4.8.11/js/mdb.min.js "></script>
+    <script src="/axios/axios.js"></script>
+    <script>
+        function cadastrarUsuario() {
+            axios.post(
+                'http://localhost:3001/usuario', {
+                    nome: document.getElementById('inputNome').value,
+                    sobrenome: document.getElementById('inputSobrenome').value,
+                    telefone: document.getElementById('inputTelefone').value,
+                    nascimento: document.getElementById('inputNascimento').value,
+                    email: document.getElementById('inputEmail').value,
+                    login: document.getElementById('inputLogin').value,
+                    senha: document.getElementById('inputPassword').value,
+                },
+            );
+        }
+
+        function logarUsuario() {
+            axios.get(
+                'http://localhost:3001/logar', {
+                    login: document.getElementById('usuarioLogin').value,
+                    senha: document.getElementById('usuarioPassword').value,
+                },
+            );
+        }
+    </script>
+</body>
+
+</html>

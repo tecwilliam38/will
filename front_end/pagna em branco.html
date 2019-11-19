@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- scripts -->
+    <!-- js -->
+    <script src="/MDB-Free/js/jquery.min.js"></script>
+    <script src="/MDB-Free/js/bootstrap.min.js"></script>
+    <script src="/fontawesome/js/all.min.js"></script>
+    <script src="/fontawesome/js/fontawesome.min.js"></script>
+    <script src="/fontawesome/js/brands.min.js"></script>
+    <script src="/fontawesome/js/fontawesome.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/MDB-Free/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/MDB-Free/css/mdb.css">
+    <link rel="stylesheet" href="/MDB-Free/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
+
+    <!-- arquivos svg -->
+    <link rel="stylesheet" href="/fontawesome/svgs/brands/500px.svg">
+
+</head>
+<style>
+    /*    .flip-container {
+        width: 10%;
+        height: 10%;
+        perspective: 1000px;
+    } */
+    
+    #switch:checked~.flip-container .flipper {
+        transform: rotateY(180deg);
+    }
+    
+    .flipper {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    
+    .front,
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    input {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+    }
+</style>
+
+<body>
+
+    <input type="checkbox" id="switch" class="mx-5 my-5" />
+
+    <label class="flip-container" for="switch">
+          <div class="flipper">
+            <div class="front">
+              <img src="https://picsum.photos/id/411/300/200" />
+              <!-- Card -->
+  <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+           <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+    
+        <!--Card content-->
+        <div class="card-body">
+    
+          <!--Title-->
+          <h4 class="card-title">Card title</h4>
+          <!--Text-->
+       
+          <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+    
+        </div>
+    
+      </div>
+            </div>
+            <div class="back">
+              <img src="https://picsum.photos/id/249/300/200" />
+            </div>
+          </div>
+        </label>
+
+
+    <hr><br><br>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/MDB-Free/js/bootstrap.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="/MDB-Free/js/popper.min.js "></script>
+    <script src="/MDB-Free/js/mdb.min.js "></script>
+</body>
+
+</html>

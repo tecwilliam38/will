@@ -1,0 +1,142 @@
+.nivel1{
+    width: 100%;
+    margin: 0px auto 0 auto;
+    padding-top: 10px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 2px 6px 10px 6px #222;
+}
+.menu_lat{
+    width: 25%;
+    height: 400px;
+    float: left;
+    padding:2px;
+    margin:0;
+    background-color: rgba(255,255 ,255, 0.3);
+    
+}
+.menu_lat ul{
+    box-shadow: 1px 3px 15px -1px #222;  
+    border: 1px solid #888;
+    border-bottom:  rgba(39, 90, 99, 0.9) 15px solid;
+    border-radius: 8px;
+    margin: 0 4px;
+    position: relative;
+    height: 470px;
+    float: left;
+    padding: 0;
+    width: 100%;
+    
+}
+.menu_lat ul li{
+    display: block;
+    width: 95%;
+    height:31px;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+    text-align: left;
+    padding:5px 0px;
+    float: left;
+    
+}
+.menu_lat ul li a{
+    height:25px;
+    font-size: 22px;
+    padding:0 0 0 5px; 
+    text-decoration: none;
+    color: #000;   
+}
+.menu_lat ul li a:hover{
+    height:25px;
+    font-size: 22px;
+    padding:0 0 0 5px; 
+    text-decoration:underline;
+    color: #999;   
+}
+.menu_lat .ini_link{  
+    box-shadow: 1px 3px 15px -1px #222;  
+    border-bottom: 1px solid;
+    border-radius: 8px;
+    height:25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;   
+    margin-left: 10px;
+    padding: 5px;   
+}
+
+.menu_lat .ini_link:hover{   
+    box-shadow: 1px 3px 15px -1px #222;  
+    border-bottom: 1px solid;
+    border-radius: 8px;
+    height:25px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #999;   
+}
+.menu_lat li:nth-child(1){
+    text-align: center;
+    border-radius:6px 6px 0 0;
+    margin-left: 0!important;
+    font-size: 30px; 
+    height: 40px!Important;
+    color: #fff; 
+    border-bottom: 0;
+    text-shadow: 0 2px 6px #111; 
+    background-color: rgba(39, 90, 99, 0.9);
+    width: 100%;
+}
+.menu_lat li:nth-child(11){
+    border-bottom: 0;
+    width: 95%;
+    
+}
+#corpo_nivel1{
+    width: 74%;
+    margin-right: 2px;
+    padding: 0;
+    float: right;
+    border-radius:12px 12px;
+    box-shadow: 1px 3px 15px -1px #222; 
+    height: 490px;
+}
+h1{
+    text-shadow: 0 0 8px #222;
+    font-size: 40px;
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+p{
+    text-align: justify;
+    text-indent: 5%;
+    font-size: 20px;
+    width: 95%;
+    margin:0  auto;
+}
+img{
+    box-shadow: 1px 3px 15px -1px #222;  
+    float: left;
+    width: 99%;
+    height: 250px;
+}
+#demo{
+    border: 1px solid;
+    width: 60%;
+    float: right;
+    height: 300px;
+}
+nav {
+    height:25px;
+    font-size: 22px;
+    padding:0 0 0 5px; 
+    text-decoration: none;
+    color: #000;  
+    cursor: pointer;
+}
+#texto{
+    background-color: #fff;
+    border-radius: 12px 12px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>App Melhor Idade</title>
+    <!-- js -->
+    <script src="/MDB-Free/js/jquery.min.js"></script>
+    <script src="/MDB-Free/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/MDB-Free/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/MDB-Free/css/mdb.css">
+    <link rel="stylesheet" href="/MDB-Free/css">
+    <link rel="stylesheet" href="/MDB-Free/css/style-nivel.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <title>App melhor Idade</title>
+</head>
+
+<body>
+    <header id="links">
+        <div class="container-fluid page h-100 d-inline-block w-100 m-1">
+            <div class="row ">
+                <!-- card 1 -->
+                <!-- <main class="d-flex container"> -->
+                <div class="d-flex card m-auto col-xs-4 col-sm-4 col-md-4 col-lg-3 bg1">
+                    <article class="card-header text-justify text-white">
+                        <h3>Mexer no Smartfone</h3>
+                    </article>
+                    <span class="card-body">                               
+                        <div class="card-img">
+                                <p class="text-left nivel-cursor" nivel-cursor" onclick="carregar('/nivel1/celular/celular.html')" >Inserir um contato na agenda</p>
+                                <p class="text-left nivel-cursor"" onclick="carregar('/nivel1/celular/celular.html')">Tirar uma Foto/Selfie</p>
+                                <p class="text-left nivel-cursor""  onclick="carregar('/nivel1/celular/celular.html')">Baixar um aplicativo (App)</p>
+                                <p class="text-left nivel-cursor"" onclick="carregar('/nivel1/celular/celular.html')">Fazer uma Chamada/Ligação</p>
+                                <p class="text-left nivel-cursor"" onclick="carregar('/nivel1/celular/celular.html')"3>Usar o Whatsapp</p>
+                            </span>
+                </div>
+                <!-- </main> -->
+            </div>
+            <!-- card 2 -->
+            <div class="d-flex card col-xs-4 col-sm-4 col-md-4 col-lg-3 bg2">
+                <article class="card-header text-justify text-white">
+                    <h3>E-mail</h3>
+                </article>
+                <span class="card-body">
+                                        <div class="card-img">
+                                    <p class="text-left nivel-cursor" fas">Criar uma conta de E-mail</p>
+                                    <p class="text-left nivel-cursor" fas">Acessar uma conta de E-mail</p>
+                                    <p class="text-left nivel-cursor" fas">Enviar um E-mail</p>
+                                    <p class="text-left nivel-cursor" fas">Pesquisar um E-mail</p>
+                                    <p class="text-left nivel-cursor" fas">Organizar a caixa de Entrada</p>
+                                </span>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="d-flex my-1 card col-xs-4 col-sm-4 col-md-4 col-lg-3 bg3">
+            <article class="card-header text-justify text-white">
+                <h3>Mexer no computador</h3>
+            </article>
+            <span class="card-body">
+                                    <div class="card-img">
+                                    <p class="text-left nivel-cursor" fas">Fazer um Curriculo</p>
+                                    <p class="text-left nivel-cursor" fas">Editar uma foto</p>
+                                    <p class="text-left nivel-cursor" fas">Ouvir uma música</p>
+                                    <p class="text-left nivel-cursor" fas">Assistir um filme</p>
+                                    <p class="text-left nivel-cursor" fas">Desligar o computador</p>
+                                </span>
+        </div>
+        </div>
+        <!-- card 4-->
+        <div class=" d-flex my-1 card col-xs-4 col-sm-4 col-md-4 col-lg-3 bg4">
+            <article class="card-header text-justify text-white">
+                <h3>Configurar a tv</h3>
+            </article>
+            <span class="card-body">
+                                <div class="card-img">
+                                    <p class="text-left nivel-cursor" fas">Aumentar ou diminuir o volume</p>
+                                    <p class="text-left nivel-cursor" fas">Fazer uma busca de canais</p>
+                                    <p class="text-left nivel-cursor" fas">Voltar um canal rápido</p>
+                                    <p class="text-left nivel-cursor" fas">Conectar um dispositivo</p>
+                                    <p class="text-left nivel-cursor" fas">Colocar para desligar sozinha</p>
+                                </span>
+        </div>
+        </div>
+        <!-- card 5 -->
+        <div class="d-flex my-1 card col-xs4 col-sm-4 col-md-4 col-lg-3 bg5" title="Facebook">
+            <article class="card-header text-justify text-white">
+                <h3>Facebook</h3>
+            </article>
+            <span class="card-body">
+                                <div class="card-img">
+                                    <p class="text-left nivel-cursor" fas">Criar uma conta no facebook</p>
+                                    <p class="text-left nivel-cursor" fas">Postar fotos no facebook</p>
+                                    <p class="text-left nivel-cursor" fas">Criar uma postagem</p>
+                                    <p class="text-left nivel-cursor" fas">Curtir uma postagem</p>
+                                    <p class="text-left nivel-cursor" fas">Comentar em uma postagem</p>
+                                </span>
+        </div>
+        </div>
+        <!-- card 6-->
+        <div class="d-flex my-1 card col-xs-4 col-sm-4 col-md-4 col-lg-3 bg6" title="Softwares">
+            <article class="card-header text-justify text-white">
+                <h3>Programas de Computador</h3>
+            </article>
+            <span class="card-body">
+                                <div class="card-img">
+                                        <p class="text-left nivel-cursor" fas">Abrir um documento de texto</p>
+                                        <p class="text-left nivel-cursor" fas">Abrir uma Planilha</p>
+                                        <p class="text-left nivel-cursor" fas">Instalar um programa</p>
+                                        <p class="text-left nivel-cursor" fas">Desisntalar um programa</p>
+                                        <p class="text-left nivel-cursor" fas">Alterar uma configuração</p>
+                                    </span>
+        </div>
+        </div>
+        <!-- card 7 -->
+        <div class="d-flex my-1 card col-xs-4 col-sm-4 col-md-4 col-lg-3 bg7 ">
+            <article class="card-header text-justify text-white">
+                <h3>Instagram</h3>
+            </article>
+            <span class="card-body">
+                            <div class="card-img">
+                                        <p class="text-left nivel-cursor" fas">Criar uma conta no instagram</p>
+                                        <p class="text-left nivel-cursor" fas">Postar fotos no instagram/p>
+                                        <p class="text-left nivel-cursor" fas">Seguir amigos no instagram</p>
+                                        <p class="text-left nivel-cursor" fas">Curtir fotos de um amigo</p>
+                                        <p class="text-left nivel-cursor" fas">Comentar uma foto de um amigo</p>
+                                    </span>
+        </div>
+        </div>
+        <!-- card 8 -->
+        <div class="d-flex my-1 card col-xs-4 col-sm-4 col-md-4 col-lg-3 bg8">
+            <article class="card-header text-justify text-white">
+                <h3>E-mail</h3>
+            </article>
+            <span class="card-body">
+                            <div class="card-img">
+                                        <p class="text-left nivel-cursor" fas">uma wrewyrweywrewrtwe</p>
+                                        <p class="text-left nivel-cursor" fas">duas wrewyrweywrewrtwe</p>
+                                        <p class="text-left nivel-cursor" fas">tres wrewyrweywrewrtwe</p>
+                                        <p class="text-left nivel-cursor" fas">quatro wrewyrweywrewrtwe</p>
+                                        <p class="text-left nivel-cursor" fas">cinco wrewyrweywrewrtwe</p>
+                                    </span>
+        </div>
+        </div>
+
+
+        </div>
+        </div>
+
+        <footer></footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/MDB-Free/js/bootstrap.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/MDB-Free/js/jquery-3.4.1.min.js"></script>
+        <script src="/MDB-Free/js/popper.min.js"></script>
+        <script src="/MDB-Free/js/mdb.min.js"></script>
+</body>
+<script>
+    function carregar(pagina) {
+        $("#links").load(pagina);
+    }
+</script>
+</body>
+
+</html>
